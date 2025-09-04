@@ -1,0 +1,5 @@
+main.py        → Starts the application
+└── ui.py      → Creates the user interface
+    ├── sentiment_analyzer.py  → Analyzes text feelings
+    ├── spam_detector.py       → Checks for spam
+    └── web_scraper.py         → Extracts web content

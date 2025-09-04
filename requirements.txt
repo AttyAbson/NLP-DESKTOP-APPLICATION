@@ -1,0 +1,89 @@
+# Advanced Text Analysis Toolkit - Requirements
+# Install with: pip install -r requirements.txt
+
+# Core GUI Framework
+pyqt5>=5.15.0
+
+# Machine Learning & NLP
+torch>=1.11.0
+transformers>=4.25.0
+tokenizers>=0.14.0
+
+# Scientific Computing
+numpy>=1.21.0
+scipy>=1.9.0
+
+# Web Scraping & Network
+requests>=2.28.0
+beautifulsoup4>=4.11.0
+fake-useragent>=1.1.0
+
+# Text Processing & Analysis
+nltk>=3.7.0          # Natural Language Toolkit
+textstat>=0.7.0      # Text readability statistics
+langdetect>=1.0.9    # Language detection
+
+# Optional Performance Enhancements
+# Uncomment these for better performance:
+# accelerate>=0.15.0     # Faster model loading
+# sentencepiece>=0.1.97  # Better tokenization for some models
+# sacremoses>=0.0.53     # Text preprocessing
+
+# Optional Advanced Features
+# Uncomment for additional functionality:
+# spacy>=3.4.0          # Advanced NLP features
+# textblob>=0.17.1      # Simple text processing
+# vaderSentiment>=3.3.2 # Rule-based sentiment analysis
+
+# Development & Testing (optional)
+# jupyter>=1.0.0        # For model experimentation
+# matplotlib>=3.5.0     # For visualization
+# seaborn>=0.11.0       # Statistical plotting
+
+# Installation Instructions:
+# 1. Basic installation:
+#    pip install pyqt5 torch transformers requests beautifulsoup4 fake-useragent numpy scipy tokenizers nltk textstat langdetect
+#
+# 2. For better performance, also install:
+#    pip install accelerate sentencepiece sacremoses
+#
+# 3. For advanced NLP features:
+#    pip install spacy textblob vaderSentiment
+#    python -m spacy download en_core_web_sm
+
+# New Models Information:
+# ========================
+# Sentiment Analysis Models (will auto-download ~500-800MB total):
+# - j-hartmann/emotion-english-distilroberta-base (~300MB)
+# - SamLowe/roberta-base-go_emotions (~500MB) 
+# - michellejieli/emotion_text_classifier (~250MB)
+#
+# Spam Detection Models (will auto-download ~400-600MB total):
+# - deepset/deberta-v3-base-injection (~400MB)
+# - ealvaradob/bert-finetuned-phishing (~280MB)
+# - Hate-speech-CNERG/dehatebert-mono-english (~440MB)
+#
+# Total first-time download: ~1-1.5GB
+# Subsequent runs: Models cached locally, no re-download needed
+#
+# System Requirements:
+# - RAM: 4GB minimum, 8GB recommended
+# - Storage: 3GB free space for models and cache
+# - Internet: Required for initial model downloads
+#
+# Troubleshooting:
+# - If models fail to download, the app will use enhanced rule-based detection
+# - For slow internet, models download sequentially with progress indication
+# - Models are cached in: ~/.cache/huggingface/transformers/
+# - To clear model cache: Delete the cache folder above
+
+# Platform-specific notes:
+# Windows: Ensure Microsoft Visual C++ 14.0 is installed
+# macOS: May need to install Xcode command line tools
+# Linux: Usually works out of the box
+
+# Emoji Support:
+# Windows: Windows Key + . (period)
+# macOS: Control + Command + Space  
+# Linux: Depends on desktop environment
+# Web: https://emojipedia.org/
